@@ -9,6 +9,7 @@
 }
 *{
   box-sizing: border-box;
+  font-family: "Roboto";
 }
 header{
   display: flex;
@@ -95,12 +96,476 @@ header{
   font-size: 62px;
 }
 .info-more-button{
-  font-family: "Roboto";
   background-color: black;
   font-size: 24px;
   color: #F8F200;
   width: 272px;
   height: 78px;
   cursor: pointer;
+}
+/* ----------------------------------------------------------блок 2----------------------------------------------------- */
+.described-title{
+  font-family: "Archangelsk";
+  font-size: 62px;
+  line-height: 63px;
+  margin-top: 70px;
+}
+.described-text{
+ font-size: 18px;
+  color: #777777;
+  margin-top: 25px;
+  line-height: 34px;
+  width: 952px;
+}
+.blue{
+  color: #52bedc;
+}
+.img-content{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 31px;
+  grid-row-gap: 32px;
+  margin-top: 58px;
+}
+.img-1{
+  background-image: url("../img/img1.png");
+  width: 460px;
+  height: 196px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  grid-area: 1 / 1 / 2 / 2;
+}
+.img-2{
+  background-image: url("../img/img2.png");
+  width: 460px;
+  height: 196px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  grid-area: 2 / 1 / 3 / 2;
+}
+.img-3{
+  background-image: url("../img/img3.png");
+  width: 788px;
+  height: 424px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  grid-area: 1 / 2 / 3 / 3;
+}
+.transition-up{
+  background-image: url("../img/transition_up.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 70px;
+}
+/* ----------------------------------------------------------блок 3----------------------------------------------------- */
+.promotion{
+  background-color: black;
 
+}
+.promotion-title{
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  padding: 25px 0 25px 0;
+}
+.promotion-title-img{
+  background-image: url("../img/promotion.svg");
+  background-repeat: no-repeat;
+  width: 132px;
+  height: 132px;
+}
+.promotion-title-text{
+  font-family: "Archangelsk";
+  font-size: 62px;
+  line-height: 63px;
+  color: white;
+  margin: 47px 0 0 0;
+}
+.promotion-text{
+  color: white;
+  line-height: 34px;
+  font-size: 18px;
+  width: 952px;
+}
+.promotion-content{
+  display: flex;
+  gap: 32px;
+  margin-top: 50px;
+}
+.promotion-form {
+  width: 460px;
+  margin-top: 56px;
+}
+.promotion-form input[type="text"],
+.promotion-form input[type="email"] {
+  width: 100%;
+  padding-bottom: 13px;
+  margin-bottom: 17px;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #777777;
+  background-color: transparent;
+  color: #fff;
+  transition: border-color 0.3s ease;
+}
+.promotion-form input[type="text"]:focus,
+.promotion-form input[type="email"]:focus{
+  border-bottom: 2px solid white;
+}
+.promotion-form input[type="text"]::placeholder,
+.promotion-form input[type="email"]::placeholder {
+  color: white;
+  font-size: 18px;
+}
+.file-upload {
+  display: flex;
+  align-items: center;
+  border: 1px dashed #fff;
+  margin-bottom: 20px;
+  cursor: pointer;
+  color: white;
+}
+
+.promotion-form input[type="file"]{
+  display: none;
+}
+
+.file-upload {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px dashed #fff;
+
+  width: 100%;
+  max-width: 460px;
+  height: 120px;
+  border-radius: 5px;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 18px;
+  margin: 17px 0 37px 0;
+}
+.border-bottom{
+  border-bottom: 1px solid white;
+}
+.file-upload:hover {
+  background-color: #333;
+}
+
+.file-upload span {
+  margin-left: 10px;
+
+}
+
+.submit-button {
+  background-color: #F8F200;
+  color: #000;
+  padding: 19px 50px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.submit-button:hover {
+  background-color: #ffcc00;
+}
+
+.checkbox input[type="checkbox"] {
+  display: none;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  color: white;
+}
+
+.checkbox label {
+  font-size: 12px;
+}
+
+.checkbox span{
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+  border: 2px solid white;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+}
+.checkbox span::after {
+  content: "";
+  width: 3px;
+  height: 8px;
+  border: solid #F8F200;
+  border-width: 0 2px 2px 0;
+  display: none;
+  position: absolute;
+  top: -1px;
+  left: 3px;
+  transform: rotate(45deg);
+}
+.checkbox input[type="checkbox"]:checked + span {
+  background-color: #000000;
+  border-color: #F8F200;
+}
+.checkbox input[type="checkbox"]:checked + span::after {
+  display: block;
+}
+
+.checkbox input {
+  margin-right: 10px;
+}
+.promotion-content-img{
+  background-image: url("../img/ps_xbox.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 788px;
+  height: 456px;
+}
+
+
+/* ----------------------------------------------------------блок 4----------------------------------------------------- */
+
+.transition-down{
+    background-image: url("../img/transition-down.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 70px;
+}
+.ad{
+  background-color: #F8F200;
+}
+.ad-content{
+  display: flex;
+  padding: 70px 0 70px 0;
+}
+.ad-content-images{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.ad-content-image-monitor{
+  background-image: url("../img/monitor.png");
+  width: 624px;
+  height: 430px;
+  background-repeat: no-repeat;
+}
+.ad-content-image-logo{
+  background-image: url("../img/ad-logo.png");
+  background-repeat: no-repeat;
+  width: 540px;
+  height: 80px;
+  margin-top: 26px;
+}
+.ad-content-info{
+ margin-left: 32px;
+}
+.ad-content-title{
+  font-family: "Archangelsk";
+  font-size: 62px;
+  line-height: 63px;
+}
+.ad-content-text{
+  font-size: 18px;
+  line-height: 34px;
+}
+.ad-content-description {
+ margin-top: 25px;
+}
+.ad-content-description-colors, .ad-content-description-picture, .ad-content-description-fast{
+ display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+.ad-content-description-colors-img{
+  background-image: url("../img/ad_colors.png");
+  width: 32px;
+  height: 32px;
+}
+.ad-content-description-colors-text, .ad-content-description-picture-text, .ad-content-description-fast-text{
+ font-size: 18px;
+  line-height: 21px;
+}
+
+.ad-content-description-picture-img{
+  background-image: url("../img/ad_picture.png");
+  width: 32px;
+  height: 32px;
+}
+
+.ad-content-description-fast-img{
+  background-image: url("../img/ad_fast.png");
+  width: 32px;
+  height: 32px;
+}
+.ad-content-button{
+  color: #F8F200;
+  background-color: black;
+  font-size: 18px;
+  width: 194px;
+  height: 59px;
+  margin-top: 25px;
+}
+/* ----------------------------------------------------------блок 5----------------------------------------------------- */
+
+.buy{
+  display: flex;
+  background-color: black;
+  color: white;
+  gap: 32px;
+}
+.buy-image{
+  background-image: url("../img/disks.jpg");
+  background-repeat: no-repeat;
+  width: 944px;
+  height: 717px;
+}
+.buy-info{
+ padding-top: 70px;
+  max-width: 624px;
+}
+.buy-info-title{
+  font-family: "Archangelsk";
+  font-size: 62px;
+  line-height: 63px;
+}
+.buy-info-set{
+
+}
+.buy-info-set-title{
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  color: #52BEDC;
+  margin: 25px 0 15px 0;
+}
+.buy-info-set-disk, .buy-info-set-case, .buy-info-set-handbook{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 20px;
+}
+.buy-info-set-disk-img{
+  background-image: url("../img/mini_disk.svg");
+  width: 32px;
+  height: 32px;
+  background-repeat: no-repeat;
+}
+.buy-info-set-handbook-img{
+  background-image: url("../img/handbook.svg");
+  width: 32px;
+  height: 32px;
+  background-repeat: no-repeat;
+}
+
+.buy-info-set-case-img{
+  background-image: url("../img/case.svg");
+  width: 32px;
+  height: 32px;
+  background-repeat: no-repeat;
+}
+.buy-info-platform{
+  margin-top: 50px;
+}
+.buy-info-platform-title{
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 28px;
+  color: #52BEDC;
+  margin-bottom: 25px;
+}
+.buy-info-platform-media{
+  display: flex;
+  gap: 80px;
+}
+.buy-info-platform-imgleft{
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+.buy-info-platform-imgright{
+  display: flex;
+  flex-direction: column;
+  gap: 55px;
+}
+.buy-info-platform-pc{
+  background-image: url("../img/PC.svg");
+  width: 62px;
+  height: 35px;
+  background-repeat: no-repeat;
+}
+.buy-info-platform-stadia{
+  background-image: url("../img/stadia.svg");
+  width: 58px;
+  height: 50px;
+  background-repeat: no-repeat;
+}
+.buy-info-platform-xbox{
+  background-image: url("../img/xbox.svg");
+  width: 178px;
+  height: 35px;
+  background-repeat: no-repeat;
+}
+.buy-info-platform-ps4{
+  background-image: url("../img/ps4.svg");
+  width: 168px;
+  height: 35px;
+  background-repeat: no-repeat;
+}
+/* ----------------------------------------------------------блок 5----------------------------------------------------- */
+
+.footer{
+  background-color: white;
+
+}
+.footer-content{
+  display: flex;
+  justify-content: space-between;
+  margin: 13px 0 13px 0;
+}
+.footer-images{
+  display: flex;
+  gap: 32px;
+align-items: center;
+}
+.footer-image-cyberpunk{
+  background-image: url("../img/logo.svg");
+  width: 296px;
+  height: 74px;
+  background-repeat: no-repeat;
+}
+.footer-image-cdProjektRed{
+  background-image: url("../img/cd_logo.svg");
+  width: 172px;
+  height: 74px;
+  background-repeat: no-repeat;
+}
+.footer-links{
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+.footer-link-License{
+  cursor: pointer;
+}
+.footer-link-Privacy{
+  cursor: pointer;
+}
+.copyright{
+  display: flex;
+  background-color: black;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+}
+.copyright-text{
+  font-size: 12px;
+  color: white;
 }
